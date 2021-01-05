@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class IsWhoIfElseIf {
     public static void main(String[] args) {
+
         String name;
         final String VA = "Вася";
         final String AN = "Анастасия";
