@@ -16,9 +16,9 @@ public class IsWhoIfElseIf {
         if (Objects.equals(name, VA)) {
             System.out.println("Привет!");
             System.out.println("Я тебя так долго ждал");
-        }else if (Objects.equals(name, AN)) {
+        } else if (Objects.equals(name, AN)) {
             System.out.println("Я тебя так долго ждал");
-        }else if (!Objects.equals(name, VA) && !(Objects.equals(name, AN))){
+        } else if (!Objects.equals(name, VA) && !(Objects.equals(name, AN))) {
             System.out.println("Добрый день, а вы кто?");
         }
     }

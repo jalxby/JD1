@@ -19,7 +19,7 @@ public class IsWhoIf {
         if (Objects.equals(name, AN)) {
             System.out.println("Я тебя так долго ждал");
         }
-        if (!Objects.equals(name, VA) && !(Objects.equals(name, AN))){
+        if (!Objects.equals(name, VA) && !(Objects.equals(name, AN))) {
             System.out.println("Добрый день, а вы кто?");
         }
     }

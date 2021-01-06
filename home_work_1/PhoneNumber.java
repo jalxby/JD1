@@ -11,7 +11,7 @@ public class PhoneNumber {
 
     @Override
     public boolean equals(Object obj) {
-      return super.equals(obj);
+        return super.equals(obj);
     }
 
     public static void main(String[] args) {

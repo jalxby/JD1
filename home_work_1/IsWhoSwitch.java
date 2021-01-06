@@ -1,4 +1,5 @@
 package home_work_1;
+
 import java.util.Scanner;
 
 public class IsWhoSwitch {
