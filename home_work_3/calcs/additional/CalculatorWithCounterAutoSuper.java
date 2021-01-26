@@ -4,10 +4,12 @@ import home_work_3.calcs.simple.CalculatorWithMathExtends;
 
 public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
     long counter = 0;
+
     public void incrementCountOperation() {
-        counter ++;
+        counter++;
     }
-    public long getCountOperation(){
+
+    public long getCountOperation() {
         return counter;
     }
 

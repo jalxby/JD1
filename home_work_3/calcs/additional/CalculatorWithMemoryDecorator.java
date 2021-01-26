@@ -81,5 +81,4 @@ public class CalculatorWithMemoryDecorator implements ICalculator {
     public ICalculator getCalculator() {
         return this.obj;
     }
-
 }

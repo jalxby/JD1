@@ -13,6 +13,5 @@ public class CalculatorWithMemoryMain {
         System.out.println(calculator.getCountOperation());
         calculator.writeLastMethodResult();
         System.out.println(calculator.getMemory());
-
     }
 }

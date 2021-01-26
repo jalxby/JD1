@@ -74,8 +74,5 @@ public class CalculatorWithMemory {
         double temp = memory;
         memory = null;
         return temp;
-
     }
-
-
 }

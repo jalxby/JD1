@@ -13,10 +13,5 @@ public class CalculatorWithCounterAutoCompositeMain {
                 calculator.powerClwc(calculator.divisionClwc(28, 5), 2));
         System.out.println(result); //140.45999999999998
         System.out.println(calculator.getCountOperation());
-
-
-
-
-
     }
 }
