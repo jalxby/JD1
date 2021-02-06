@@ -3,8 +3,8 @@ package home_work_3.calcs.additional;
 import home_work_3.calcs.api.ICalculator;
 
 public class CalculatorWithCounterAutoCompositeInterface{
-    ICalculator obj;
-    int counter;
+    private ICalculator obj;
+    private int counter;
 
     public CalculatorWithCounterAutoCompositeInterface(ICalculator obj) {
         this.obj = obj;

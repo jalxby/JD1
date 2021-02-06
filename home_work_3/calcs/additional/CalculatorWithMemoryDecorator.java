@@ -3,10 +3,10 @@ package home_work_3.calcs.additional;
 import home_work_3.calcs.api.ICalculator;
 
 public class CalculatorWithMemoryDecorator implements ICalculator {
-    ICalculator obj;
-    int counter;
-    double lastOperation;
-    Double memory;
+    private ICalculator obj;
+    private int counter;
+    private double lastOperation;
+    private Double memory;
 
 
     public CalculatorWithMemoryDecorator(ICalculator obj) {

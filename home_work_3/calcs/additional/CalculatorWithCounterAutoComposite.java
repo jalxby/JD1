@@ -7,10 +7,10 @@ import home_work_3.calcs.simple.CalculatorWithOperator;
 public class CalculatorWithCounterAutoComposite {
 
 
-    public CalculatorWithOperator clwo;
-    public CalculatorWithMathCopy clwc;
-    public CalculatorWithMathExtends clwe;
-    int counter;
+    private CalculatorWithOperator clwo;
+    private CalculatorWithMathCopy clwc;
+    private CalculatorWithMathExtends clwe;
+    private int counter;
 
     public long getCountOperation() {
         return counter;

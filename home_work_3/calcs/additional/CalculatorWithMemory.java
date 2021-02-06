@@ -5,10 +5,10 @@ import home_work_3.calcs.api.ICalculator;
 import java.util.ArrayDeque;
 
 public class CalculatorWithMemory {
-    ICalculator obj;
-    int counter;
-    double lastOperation;
-    Double memory;
+    private ICalculator obj;
+    private int counter;
+    private double lastOperation;
+    private Double memory;
 
     public CalculatorWithMemory(ICalculator obj) {
         this.obj = obj;
