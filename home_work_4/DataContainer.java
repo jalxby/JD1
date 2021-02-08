@@ -104,14 +104,15 @@ public class DataContainer<T> {
         return false;
     }
 
+
     void sort(Comparator<T> comparator) {
         T temp;
         for (int i = 0; i < data.length - 1; i++) {
-            if (comparator.compare(data[i], data[i + 1]) > 0) {
+            if (comparator.compare(data[i], data[i + 1]) < 0) {
                 temp = data[i];
                 data[i] = data[i + 1];
                 data[i + 1] = temp;
-            }else if (comparator.compare(data[i], data[i + 1]) < 0){}
+            }
         }
 
     }
