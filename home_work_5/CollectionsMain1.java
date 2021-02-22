@@ -6,7 +6,8 @@ import collections.core.random.FakeRandom;
 import collections.dto.Student;
 import collections.predicate.StudentAgeAndScorePredicate;
 import collections.suppliers.RandomStudentSupplier;
-import collections.utils.SortUtils;
+
+import home_work_5.utils.SortUtils;
 
 import java.util.ArrayList;
 import java.util.Comparator;

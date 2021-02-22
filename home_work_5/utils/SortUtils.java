@@ -25,24 +25,28 @@ public class SortUtils {
         }
     }
 
-    public static void shakerSort(int[] container) {
+    public static <T> void shakerSort(List<T> container, Comparator<T> comparator) {
+        int size = container.size();
 
-        for (int leftDirection = 0, rightDirection = container.length - 1;
+        for (int leftDirection = 0, rightDirection = size - 1;
              leftDirection < rightDirection; leftDirection++, rightDirection--) {
 
-            int buffer;
             for (int i = leftDirection; i < rightDirection; i++) {
-                if (container[i] > container[i + 1]) {
-                    buffer = container[i];
-                    container[i] = container[i + 1];
-                    container[i + 1] = buffer;
+                T left = container.get(i);
+                T right = container.get(i + 1);
+                int compare = comparator.compare(left, right);
+                if (compare > 0) {
+                    container.set(i, right);
+                    container.set(i + 1, left);
                 }
             }
             for (int i = rightDirection; i > leftDirection; i--) {
-                if (container[i] < container[i - 1]) {
-                    buffer = container[i];
-                    container[i] = container[i - 1];
-                    container[i - 1] = buffer;
+                T left = container.get(i);
+                T right = container.get(i - 1);
+                int compare = comparator.compare(left, right);
+                if (compare < 0) {
+                    container.set(i, right);
+                    container.set(i - 1, left);
                 }
             }
         }
