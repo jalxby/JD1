@@ -1,6 +1,8 @@
 package home_work_5.suppliers;
 
-import collections.dto.Student;
+
+
+import home_work_5.dto.Student;
 
 import java.util.function.Supplier;
 

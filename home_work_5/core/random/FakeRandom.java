@@ -1,6 +1,7 @@
 package home_work_5.core.random;
 
-import collections.core.random.api.IRandom;
+
+import home_work_5.core.random.api.IRandom;
 
 //TODO Надо реализовать нормальные рандом
 public class FakeRandom implements IRandom {
