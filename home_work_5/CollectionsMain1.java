@@ -14,10 +14,9 @@ import home_work_5.utils.SortUtils;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
+
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.Predicate;
+
 import java.util.function.Supplier;
 
 public class CollectionsMain1 {
@@ -66,9 +65,8 @@ public class CollectionsMain1 {
          */
         System.out.println("--------------------------------------------------------------");
         SortUtils.shakerSort(filtered, ScoreAgeComparator);
-        Iterator iterator = filtered.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+        for (Student student : filtered) {
+            System.out.println(student);
         }
     }
 }
