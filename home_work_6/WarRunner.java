@@ -8,7 +8,8 @@ public class WarRunner {
         String war = WarNeverChanges.fileToString(file);
         ITextSpliterator spliterator = new DefaultTextSpliterator();
         System.out.println(TextToSet.createSet(spliterator, war).size());
-        System.out.println(TextToMap.createMap(spliterator, war));
+        System.out.println("----------------------------------------------------");
+        TextToMap.getTopN(TextToMap.sortedMap(TextToMap.createMap(spliterator, war)),20);
 
 
     }
